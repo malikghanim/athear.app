@@ -15,24 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('test', function(){
-    return App\Models\User::find(4);
-});
-
-
-/*
-|--------------------------------------------------------------------------
-| API routes
-|--------------------------------------------------------------------------
-*/
-
-Route::group(['prefix' => 'api', 'namespace' => 'API'], function () {
-    Route::group(['prefix' => 'v1'], function () {
-        require config('infyom.laravel_generator.path.api_routes');
-    });
-});
-
-
 Route::get('login', 'Auth\AuthController@getLogin');
 Route::post('login', 'Auth\AuthController@postLogin');
 Route::get('logout', 'Auth\AuthController@logout');
@@ -48,3 +30,21 @@ Route::get('password/reset/{token}', 'Auth\PasswordController@getReset');
 Route::post('password/reset', 'Auth\PasswordController@postReset');
 
 Route::get('/dashboard', 'HomeController@index');
+
+
+Route::get('test', function(){
+    return 'test';
+})->middleware(['auth']);
+
+
+/*
+|--------------------------------------------------------------------------
+| API routes
+|--------------------------------------------------------------------------
+*/
+
+Route::group(['prefix' => 'api', 'namespace' => 'API'], function () {
+    Route::group(['prefix' => 'v1'], function () {
+        require config('infyom.laravel_generator.path.api_routes');
+    });
+});
