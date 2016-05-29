@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b57cd982e5320de948fbc1d5e9166951",
-    "content-hash": "0abdce5d9749b80acab5fe1a491dc517",
+    "hash": "cc44a0f707dd5786561294278f7d2dd1",
+    "content-hash": "ae9fbb644c312eb3e2933a61d95e2189",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -284,17 +284,17 @@
             "time": "2014-09-09 13:34:57"
         },
         {
-            "name": "infyomlabs/core-templates",
+            "name": "infyomlabs/adminlte-templates",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/InfyOmLabs/core-templates.git",
-                "reference": "20d7f4eb45bac2d0907c51120d3072bd69dac63e"
+                "url": "https://github.com/InfyOmLabs/adminlte-templates.git",
+                "reference": "c94757532e048516a3553ea7b6a5a7d4f99cb329"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/InfyOmLabs/core-templates/zipball/20d7f4eb45bac2d0907c51120d3072bd69dac63e",
-                "reference": "20d7f4eb45bac2d0907c51120d3072bd69dac63e",
+                "url": "https://api.github.com/repos/InfyOmLabs/adminlte-templates/zipball/c94757532e048516a3553ea7b6a5a7d4f99cb329",
+                "reference": "c94757532e048516a3553ea7b6a5a7d4f99cb329",
                 "shasum": ""
             },
             "require": {
@@ -304,7 +304,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "InfyOm\\CoreTemplates\\": "src/"
+                    "InfyOm\\AdminLTETemplates\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -317,14 +317,16 @@
                     "email": "me@mitul.me"
                 }
             ],
-            "description": "Core Bootstrap templates for InfyOm Laravel Generator",
+            "description": "AdminLTE templates for InfyOm Laravel Generator",
             "keywords": [
+                "AdminLTE",
                 "bootstrap",
                 "generator",
+                "infyom",
                 "laravel",
                 "templates"
             ],
-            "time": "2016-04-19 19:56:06"
+            "time": "2016-04-22 04:19:06"
         },
         {
             "name": "infyomlabs/laravel-generator",
@@ -3848,9 +3850,9 @@
     "stability-flags": {
         "zizaco/entrust": 20,
         "infyomlabs/laravel-generator": 20,
-        "infyomlabs/core-templates": 20,
         "infyomlabs/swagger-generator": 20,
-        "jlapp/swaggervel": 20
+        "jlapp/swaggervel": 20,
+        "infyomlabs/adminlte-templates": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
