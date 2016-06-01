@@ -29,12 +29,10 @@ Route::post('password/email', 'Auth\PasswordController@postEmail');
 Route::get('password/reset/{token}', 'Auth\PasswordController@getReset');
 Route::post('password/reset', 'Auth\PasswordController@postReset');
 
-Route::get('/dashboard', 'HomeController@index');
+Route::get('/dashboard', 'DashboardController@index');
 
+Route::get('/home', 'HomeController@index');
 
-Route::get('test', function(){
-    return 'test';
-})->middleware(['auth']);
 
 
 /*
