@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests;
 use Illuminate\Http\Request;
+use Webpatser\Countries\Countries;
 
 class DashboardController extends Controller
 {
@@ -24,6 +25,8 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        return view('dashboard');
+        $countries = new Countries();
+        return $countries->getList();
+        //return view('dashboard');
     }
 }

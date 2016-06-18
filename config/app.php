@@ -167,6 +167,7 @@ return [
         \InfyOm\Generator\InfyOmGeneratorServiceProvider::class,
         Jlapp\Swaggervel\SwaggervelServiceProvider::class,
         InfyOm\AdminLTETemplates\AdminLTETemplatesServiceProvider::class,
+        Webpatser\Countries\CountriesServiceProvider::class,
 
     ],
 
@@ -218,7 +219,8 @@ return [
         'Entrust'   => Zizaco\Entrust\EntrustServiceProvider::class,
         'Form'      => Collective\Html\FormFacade::class,
         'Html'      => Collective\Html\HtmlFacade::class,
-        'Flash'     => Laracasts\Flash\Flash::class
+        'Flash'     => Laracasts\Flash\Flash::class,
+        'Countries' => Webpatser\Countries\CountriesFacade::class,
 
     ],
 

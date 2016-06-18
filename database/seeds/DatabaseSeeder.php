@@ -24,5 +24,9 @@ class DatabaseSeeder extends Seeder
             App\Models\User::create($user);
         }
 
+        //Seed the countries
+        $this->call('CountriesSeeder');
+        $this->command->info('Seeded the countries!');
+
     }
 }
