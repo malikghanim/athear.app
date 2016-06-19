@@ -13,3 +13,6 @@
 
 
 
+
+
+Route::resource('countries', 'CountryAPIController');

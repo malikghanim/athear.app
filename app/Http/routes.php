@@ -33,6 +33,9 @@ Route::get('/dashboard', 'DashboardController@index');
 
 Route::get('/home', 'HomeController@index');
 
+// Countries Management
+Route::resource('countries', 'CountryController');
+
 
 
 /*
@@ -46,4 +49,3 @@ Route::group(['prefix' => 'api', 'namespace' => 'API'], function () {
         require config('infyom.laravel_generator.path.api_routes');
     });
 });
-

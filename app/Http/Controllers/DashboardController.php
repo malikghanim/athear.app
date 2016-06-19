@@ -25,8 +25,8 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        $countries = new Countries();
-        return $countries->getList();
-        //return view('dashboard');
+        //$countries = new Countries();
+        //return $countries->getList();
+        return view('dashboard');
     }
 }
